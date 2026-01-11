@@ -6,10 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grade Calculator Program</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
 
+    <!-- THis is the whole section 
+     for the whole website -->
+
+    <section class="hero">
+
+        <!-- 4 divs to represent the 4 main components
+         Add students
+         Results
+         Student Records
+         Summarry boxes down
+          -->
+
+
+        <!-- First div in section  
+           
+           Add students with all the components
+           -->
+        <div class="hero__add-students" id="divs">
+
+            <!-- Title for this div -->
+            <h3 class="hero__add-students--title">Add Students</h3>
+
+            <!-- Student name input -->
+            <label for="name_input">Student Name: </label>
+            <input id="name_input" type="text" class="hero__add-students--input" placeholder="Enter your name here">
+
+            <!-- Quiz grade input grade between 0-100 -->
+            <label for="quiz_input">Quiz grade: </label>
+            <input id="quiz_input" type="number" min="0" max="100" step="1" class="hero__add-students--input"
+                placeholder="0">
+
+            <!-- MIdterm grade input grade between 0-100 -->
+            <label for="midterm_input">Midterm grade: </label>
+            <input id="midterm_input" type="number" min="0" max="100" step="1" class="hero__add-students--input"
+                placeholder="0">
+
+            <!-- Final grade input grade between 0-100 -->
+            <label for="final_input">Final grade: </label>
+            <input id="final_input" type="number" min="0" max="100" step="1" class="hero__add-students--input"
+                placeholder="0">
+
+            <!-- Buttons "Calculate" ,, "Save student"-->
+            <button class="hero__add-students--btns"><i class="fa-solid fa-calculator fa-bounce"></i>Calculate</button>
+            <button class="hero__add-students--btns"><i class="fa-solid fa-floppy-disk fa-bounce"></i>Save
+                Student</button>
+
+        </div>
+
+
+        <!-- Second div in section  
+           
+           Result for the student
+           -->
+        <div class="hero__results" id="divs">
+
+            <!-- Title for this div -->
+            <h3 class="hero__results--title">Results</h3>
+
+
+            <!-- This div is for average score to let them be combined in that design beside each other,, the h2 will be updated later in app.js
+              -->
+            <div class="hero__results--average">
+                <p class="hero__results--par">Average Score:</p>
+                <h2 id="avg-score"></h2>
+            </div>
+
+             <!-- This div is for letter grade to let them be combined in that design beside each other,, the h2 will be updated later in app.js
+              -->
+             <div class="hero__results--letter-grade">
+                <p class="hero__results--par">Letter grade: </p>
+                <h2 id="letter-grade"></h2>
+             </div>
+
+             <!-- This div is for status to let them be combined in that design beside each other,, the h2 will be updated later in app.js
+              -->
+             <div class="hero__results--status">
+                <p class="hero__results--par">Status: </p>
+                <h2 id="status"></h2>
+             </div>
+
+             <!-- This is a regular p to be displayed if the resukt is been seen
+              it will be updated  latelt in app.js
+               -->
+
+               <p id="success-par"></p>
+        </div>
+
+
+
+
+        <div class="hero__student-records" id="divs">
+
+            <!-- Title for this div -->
+            <h3 class="hero__student-records--title">Student Records</h3>
+
+            
+
+        </div>
+
+        <div class="hero__summary" id="divs">
+
+
+        </div>
+
+
+
+
+    </section>
 
     <script src="app.js"></script>
 </body>
